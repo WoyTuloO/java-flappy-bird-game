@@ -119,7 +119,7 @@ public class Game extends JPanel implements KeyListener {
         Speeder.stop();
         Gravity.stop();
         FrameRate.stop();
-        int option = JOptionPane.showConfirmDialog(null, "Game Over! Czy chcesz zagrać ponownie?", "Koniec gry", JOptionPane.YES_NO_OPTION);
+        int option = JOptionPane.showConfirmDialog(null, "Game Over! Do you want to start again?", "Game Over", JOptionPane.YES_NO_OPTION);
         if (option == JOptionPane.YES_OPTION) {
             reset();
             Gravity.start();
